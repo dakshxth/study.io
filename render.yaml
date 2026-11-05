@@ -1,0 +1,31 @@
+services:
+  - type: web
+    name: private-study-space
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: STUDY_AUTH_REQUIRED
+        value: "true"
+      - key: STUDY_COOKIE_SECURE
+        value: "true"
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_ANON_KEY
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: STUDY_OWNER_ID
+        sync: false
+      - key: STUDY_APP_SECRET
+        sync: false
+      - key: STUDY_LLM_BASE_URL
+        sync: false
+      - key: STUDY_LLM_API_KEY
+        sync: false
+      - key: STUDY_LLM_MODEL
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: BRAVE_SEARCH_API_KEY
+        sync: false
