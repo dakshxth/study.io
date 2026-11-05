@@ -1,4 +1,4 @@
-# NEXUS — Private Personal Study Platform
+# STUDY.IO — Private Personal Study Platform
 
 A private engineering study platform built as a React + Vite frontend and FastAPI backend. It supports a single-owner online deployment backed by Supabase Auth, Postgres, and a private Storage bucket, as well as local development. Features include:
 
